@@ -1,0 +1,8 @@
+.faces{
+  position: relative;
+  @import "faceWhite";
+  @import "nose";
+  @import "noseLine";
+  @import "mouth";
+  @import "whiskers";
+}

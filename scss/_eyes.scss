@@ -1,0 +1,57 @@
+.eyes {
+  position: relative;
+  z-index: 5;
+  .eye {
+    width: 72px;
+    height: 82px;
+    background-color: #fff;
+    border: 2px solid #000;
+    position: absolute;
+    border-radius: 35px;
+    top: 40px;
+  }
+  .eye::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    top: 40px;
+    border-radius: 50%;
+    animation: eyesmove 5s linear infinite;
+  }
+  .left {
+    left: 82px;
+  }
+  .right {
+    left: 156px;
+  }
+  .left::after {
+    left: 50px;
+  }
+  .right::after {
+    left: 7px;
+  }
+
+  @keyframes eyesmove {
+    60% {
+      margin: 0;
+    }
+    70% {
+      margin: -22px 0 0 0;
+    }
+    75% {
+      margin: -22px 0 0 -5px;
+    }
+    80% {
+      margin: -22px 0 0 5px;
+    }
+    87% {
+      margin: -22px 0 0 0;
+    }
+    90% {
+      margin: 0;
+    }
+  }
+}

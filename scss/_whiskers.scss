@@ -1,0 +1,34 @@
+.whiskers{
+  width: 220px;
+  height: 80px;
+  background-color: #fff;
+  position: absolute;
+  top: 120px;
+  left: 45px;
+  z-index: 2;
+  .whisker{
+    width: 60px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+  }
+  .right{
+    left: 165px;
+  }
+  .top{
+    top: 25px;
+  }
+  .middle{
+    top: 45px;
+  }
+  .bottom{
+    top: 65px;
+  }
+  .rotate160{
+    transform: rotate(160deg);
+  }
+  .rotate20{
+    transform: rotate(20deg);
+  }
+}

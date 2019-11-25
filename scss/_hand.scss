@@ -1,0 +1,58 @@
+.hand{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  &.left{
+    left: -72px;
+  }
+  &.right{
+    right: -72px;
+  }
+  .arm{
+    width: 80px;
+    height: 50px;
+    background-color: #07bbea;
+    border:1px solid #000;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+  }
+  &.left .arm{
+    left: 20px;
+    transform: rotate(145deg);
+  }
+  &.right .arm{
+    transform: rotate(35deg);
+  }
+
+  .arm::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .write{
+    width: 5px;
+    height: 45px;
+    background-color: #07bbea;
+    border-radius: 2px;
+    position: absolute;
+  }
+  &.left .arm::after{
+    left: 50px;
+    bottom: -7px;
+  }
+
+  &.right .arm::after{
+    right: -33px;
+    bottom: -7px;
+  }
+
+  &.left .write{top:-5px;left: 67px;}
+  &.right .write{top:-5px;right: 67px;}
+}

@@ -1,0 +1,50 @@
+.neck{
+  width: 230px;
+  height: 20px;
+  background-color: #c40;
+  border: 2px solid #000;
+  border-radius: 10px;
+  position: absolute;
+  top: 270px;
+  left: 45px;
+  z-index: 4;
+  .bell{
+    height: 40px;
+    width: 40px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #f9f12a;
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    .bellTongue{
+      width: 12px;
+      height: 10px;
+      background-color: #000;
+      border-radius: 50%;
+      position: absolute;
+      top: 20px;
+      left: 14px;
+    }
+  }
+  .bell::after{
+    content: '';
+    display: block;
+    width: 36px;
+    height: 2px;
+    background-color: #f9f12a;
+    border: 2px solid #333;
+    position: absolute;
+    top: 10px;
+  }
+  .bell::before{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 15px;
+    background-color: #000;
+    position: absolute;
+    top: 27px;
+    left: 18px;
+  }
+}
