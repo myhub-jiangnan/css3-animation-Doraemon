@@ -343,31 +343,3 @@ setInterval(() => {
     }
 }, timeout);
 
-// function writeCode(result, timeout) {
-//     return setInterval(() => {
-//         n += 5;
-//         ele('.code').innerHTML = Prism.highlight(result.substring(0, n), Prism.languages.css, 'css');
-//         ele('#styleTag').innerHTML = result.substring(0, n);
-//         ele('.code').scrollTop = ele('.code').scrollHeight;
-//         if (n >= result) {
-//             window.clearInterval(id);
-//         }
-//     }, timeout)
-// }
-// var timerId = writeCode(result, timeout);
-
-// function resetSpeed(timeout) {
-//     ele('.speed').innerHTML = `速度：${5 - Math.floor(timeout / 10)}`;
-//     window.clearInterval(timerId);
-//     timerId = writeCode(result, timeout);
-// }
-
-// ele('.up').addEventListener('click', () => {
-//     if (timeout > 0) timeout -= 10;
-//     resetSpeed(timeout);
-// })
-
-// ele('.down').addEventListener('click', () => {
-//     if (timeout < 200) timeout += 10;
-//     resetSpeed(timeout);
-// })
